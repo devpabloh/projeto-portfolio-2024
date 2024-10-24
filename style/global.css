@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Azul (confiança e profissionalismo) pode ser a cor dominante no portfólio */
+    --azul-claro:#3498db;
+    --azul-marinho:#2c3e50;
+
+    /* Cinza (Equilíbrio e Sofisticação) Ótimo para background e seções de texto. */
+    --cinza-claro:#ecf0f1;
+    --cinza-escuro:#7f8c8d;
+
+    /* Verde (Inovação e Crescimento) criatividade, frescor e inovação, ideias importantes no campo da tecnologia.*/
+    --verde-medio:#2ecc71;
+    --verde-esmeralda: #27ae60;
+
+    /* Laranja (Energia e Acessibilidade) Usar laranja para botões ou detalhes pode transmitir energia e entusiasmo, além de incentivar interações. */
+    --laranja-vivo:#e67e22;
+    --laranja-palido: #f39c12;
+
+    /* Branco (Minimalismo e Clareza) O branco ajuda a dar espaçamento e sensação de limpeza, ideal para facilitar a leitura e destacar informações importantes. */
+    --branco:#ffffff;
+
+}
+
+header, footer{
+    background: var(--azul-claro);
+    color: var(--branco);
+    height: 200px;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+
+
+    ul{
+        display: flex;
+        gap: 1rem;
+        list-style-type: none;
+    }
+    
+    a{
+        color: var(--branco);
+        text-decoration: none;
+        font-size: 2rem;
+    }
+    
+    a:hover, .hover{
+        color: var(--laranja-vivo);
+        text-decoration: underline;
+    }
+    
+}
+
+
+
+section{
+    background-color: var(--branco);
+    color: var(--azul-marinho);
+    font-size: 2rem;
+    height: 150px;
+
+    & button{
+        background-color: var(--verde-medio);
+        border-radius: .2rem;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+
+    & .hover{
+        background-color: var(--verde-esmeralda);
+        
+    }
+}
+
+main{
+    background-color: var(--cinza-claro);
+    color:#2c3e50 ;
+    height: 150px;
+    font-size: 2rem;
+}
